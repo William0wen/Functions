@@ -6,7 +6,7 @@ def main_routine():
     total_sales = 0
     tickets_sold = 0
     ticket_wanted = input("\nDo you want to sell a ticket? [Y] [N] ").lower()
-    while ticket_wanted != "n":
+    if ticket_wanted != "n":
         ticket = sell_ticket()
 
         # Get the number of tickets wanted in the category chosen
